@@ -1,6 +1,6 @@
 object fTicket: TfTicket
-  Left = 1106
-  Top = 625
+  Left = 1190
+  Top = 138
   Width = 366
   Height = 222
   Caption = 'fTicket'
@@ -12,6 +12,7 @@ object fTicket: TfTicket
   Font.Style = []
   OldCreateOrder = False
   Position = poOwnerFormCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object pnlBottom: TPanel
@@ -21,13 +22,15 @@ object fTicket: TfTicket
     Height = 79
     Align = alBottom
     TabOrder = 0
-    object btn1: TButton
+    object btnok: TButton
       Left = 24
       Top = 24
       Width = 107
       Height = 33
       Caption = 'OK'
+      ModalResult = 1
       TabOrder = 0
+      OnClick = btnokClick
     end
     object btn2: TButton
       Left = 216
@@ -35,6 +38,7 @@ object fTicket: TfTicket
       Width = 107
       Height = 33
       Caption = 'Cancel'
+      ModalResult = 2
       TabOrder = 1
     end
   end
@@ -60,9 +64,9 @@ object fTicket: TfTicket
     end
     object edtTicketNumber: TEdit
       Left = 24
-      Top = 56
+      Top = 48
       Width = 161
-      Height = 25
+      Height = 33
       TabOrder = 0
     end
   end

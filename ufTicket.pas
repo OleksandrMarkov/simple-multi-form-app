@@ -12,8 +12,10 @@ type
     pnl1: TPanel;
     lbl1: TLabel;
     edtTicketNumber: TEdit;
-    btn1: TButton;
+    btnok: TButton;
     btn2: TButton;
+    procedure FormShow(Sender: TObject);
+    procedure btnokClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,5 +28,17 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfTicket.FormShow(Sender: TObject);
+begin
+  edtTicketNumber.Clear;
+  edtTicketNumber.SetFocus;
+end;
+
+procedure TfTicket.btnokClick(Sender: TObject);
+begin
+//fTicket.Close;
+Close;
+end;
 
 end.

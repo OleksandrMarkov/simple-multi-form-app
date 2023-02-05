@@ -1,6 +1,6 @@
 object fName: TfName
-  Left = 305
-  Top = 498
+  Left = 491
+  Top = 430
   Width = 1142
   Height = 656
   Caption = 'Ticket registration'
